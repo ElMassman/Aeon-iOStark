@@ -30,6 +30,7 @@
 		<height>720</height>
 		<aspectratio>stretch</aspectratio>
 		<imagepath>../../../../../../../../Library/Desktop Pictures/Nature</imagepath>
+		<aspectratio>scale</aspectratio>
 		<timeperimage>8000</timeperimage>
 		<fadetime>1000</fadetime>
 		<randomize>true</randomize>

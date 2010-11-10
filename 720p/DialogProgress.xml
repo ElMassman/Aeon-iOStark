@@ -46,9 +46,9 @@
 		
 	<control type="label" id="2">
 		<description>Path</description>
-		<posx>0</posx>
+		<posx>30</posx>
 		<posy>75</posy>
-		<width>708</width>
+		<width>668</width>
 		<height>51</height>
 		<textcolor>a7ffffff</textcolor>
 		<align>center</align>
@@ -57,9 +57,9 @@
 
 	<control type="label" id="3">
 		<description>Heading Label</description>
-		<posx>0</posx>
+		<posx>30</posx>
 		<posy>95</posy>
-		<width>708</width>
+		<width>668</width>
 		<height>51</height>
 		<textcolor>a7ffffff</textcolor>
 		<align>center</align>
@@ -69,9 +69,9 @@
 		
 	<control type="label" id="4">
 		<description>Path</description>
-		<posx>0</posx>
+		<posx>30</posx>
 		<posy>95</posy>
-		<width>708</width>
+		<width>668</width>
 		<height>51</height>
 		<align>center</align>
 		<font>Font_ProgressLabelBig</font>

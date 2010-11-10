@@ -18,22 +18,22 @@
 
 	<control type="group">
 	<posx>287</posx>
-	<posy>520</posy>
-	<width>707</width>
+	<posy>470</posy>
+	<width>708</width>
 	<height>183</height>
 	
 	<control type="image">
-			<posx>10</posx>
-			<posy>10</posy>
-			<width>708</width>
-			<height>183</height>
-			<texture>dialogs/progress_backg.png</texture>		
-		</control>
+		<posx>10</posx>
+		<posy>10</posy>
+		<width>708</width>
+		<height>183</height>
+		<texture>dialogs/progress_backg.png</texture>		
+	</control>
 	
 		<control type="label" id="2">
-			<posx>0</posx>
+			<posx>30</posx>
 			<posy>38</posy>
-			<width>708</width>
+			<width>668</width>
 			<height>51</height>
 			<textcolor>a7ffffff</textcolor>
 			<align>center</align>
@@ -54,9 +54,9 @@
 		</control>
 
 		<control type="label" id="4">
-			<posx>0</posx>
+			<posx>30</posx>
 			<posy>81</posy>
-			<width>708</width>
+			<width>668</width>
 			<height>51</height>
 			<textcolor>a7ffffff</textcolor>
 			<align>center</align>
@@ -64,9 +64,9 @@
 		</control>
 		
 		<control type="button" id="10">
-			<posx>40</posx>
+			<posx>30</posx>
 			<posy>101</posy>
-			<width>627</width>
+			<width>668</width>
 			<height>51</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
@@ -87,9 +87,9 @@
 		</control>
 		
 		<control type="button" id="11">
-			<posx>40</posx>
+			<posx>30</posx>
 			<posy>101</posy>
-			<width>627</width>
+			<width>668</width>
 			<height>51</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
@@ -133,9 +133,9 @@
 		
 		<control type="label" id="1">
 			<description>Heading Label</description>
-			<posx>40</posx>
+			<posx>30</posx>
 			<posy>50</posy>
-			<width>627</width>
+			<width>668</width>
 			<height>51</height>
 			<textcolor>a7ffffff</textcolor>
 			<align>center</align>
