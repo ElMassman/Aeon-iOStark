@@ -21,6 +21,10 @@
 	<posy>470</posy>
 	<width>708</width>
 	<height>183</height>
+
+	<animation type="Conditional" reversible="false" condition="Player.HasAudio">
+				<effect type="slide" start="0,0" end="0,-280" time="0" />
+				</animation>
 	
 	<control type="image">
 		<posx>10</posx>

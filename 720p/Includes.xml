@@ -4,6 +4,194 @@
 <include file="CommonViews.xml" />
 <include file="Includes_Colours.xml" />
 
+	<!-- Home Now Playing panel -->
+
+	<include name="Furniture_HomeNowPlayingObjects">
+		<control type="image">
+			<posx>18</posx>
+			<posy>446</posy>
+			<height>262</height>
+			<width>262</width>
+			<texture>home/nowplaying_back.png</texture>
+			<visible>Player.HasAudio</visible>
+		</control>
+
+		<control type="image">
+			<posx>261</posx>
+			<posy>506</posy>
+			<height>176</height>
+			<width>259</width>
+			<texture>home/nowplaying_info.png</texture>
+			<aspectratio>stretch</aspectratio>
+			<visible>Player.HasAudio + !Control.HasFocus(93)</visible>
+		</control>
+
+		<control type="image">
+			<posx>28</posx>
+			<posy>456</posy>
+			<height>242</height>
+			<width>242</width>
+			<texture fallback="defaultmusicbig.png" diffuse="home/nowplaying_mask.png">$INFO[MusicPlayer.Cover]</texture>
+			<visible>Player.HasAudio</visible>
+		</control>
+
+		<control type="image">
+			<posx>28</posx>
+			<posy>456</posy>
+			<height>242</height>
+			<width>242</width>
+			<texture>home/nowplaying_overlay.png</texture>
+			<visible>Player.HasAudio</visible>
+		</control>		
+	</include>
+
+	<include name="Furniture_HomeNowPlayingMetrics">
+		<posx>296</posx>
+		<width>533</width>
+		<height>25</height>
+		<aligny>left</aligny>	
+		<visible>Player.HasAudio + !Control.HasFocus(93)</visible>
+	</include>
+	
+	<include name="Furniture_HomeNowPlayingInfo">
+		<control type="label">
+			<posy>478</posy>
+			<label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label>
+			<font>Font_HomeNowPlayingArtist</font>
+			<textcolor>abFFFFFF</textcolor>
+			<include>Furniture_HomeNowPlayingMetrics</include>
+		</control>
+
+		<control type="label">
+			<posy>510</posy>
+			<include>Furniture_HomeNowPlayingMetrics</include>
+			<textcolor>abFFFFFF</textcolor>
+			<label>[UPPERCASE]$INFO[MusicPlayer.Album][/UPPERCASE]</label>
+			<font>Font_HomeNowPlayingAlbum</font>
+		</control>
+		
+		<control type="label">
+			<include>Furniture_HomeNowPlayingMetrics</include>
+			<posy>634</posy>
+			<textcolor>ab749a9a</textcolor>
+			<label>31006</label>
+			<font>Font_HomeNowPlayingAlbum</font>
+			<visible>!Player.Paused</visible>
+		</control>
+		
+		<control type="label">
+			<include>Furniture_HomeNowPlayingMetrics</include>
+			<posy>634</posy>
+			<textcolor>ab749a9a</textcolor>
+			<label>31007</label>
+			<font>Font_HomeNowPlayingAlbum</font>
+			<visible>Player.Paused</visible>
+		</control>
+
+		<control type="label">
+			<include>Furniture_HomeNowPlayingMetrics</include>
+			<posy>650</posy>
+			<textcolor>abFFFFFF</textcolor>
+			<label>[UPPERCASE]$INFO[MusicPlayer.Title][/UPPERCASE]</label>
+			<font>Font_HomeNowPlayingTrack</font>
+		</control>	
+	</include>
+
+	<include name="Furniture_HomeNowPlaying">
+		<control type="image">
+			<posx>0</posx>
+			<posy>240</posy>
+			<width>1280</width>
+			<height>630</height>
+			<texture>home/nowplaying_shadow.png</texture>
+			<visible>Player.HasAudio</visible>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="fade" start="0" end="100" delay="500" time="400" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="fade" start="100" end="0" time="200" />
+			</animation>
+		</control>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>-30</posy>
+			<height>720</height>
+			<width>1280</width>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="slide" start="-800,0" end="0,0" delay="500" time="200" easing="out" tween="quadratic" />
+				<effect type="fade" start="0" end="100" delay="500" time="200" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="slide" start="0,0" end="-800,0" time="200" easing="in" tween="quadratic" />
+				<effect type="fade" start="100" end="0" time="200" />
+			</animation>
+			<include>Furniture_HomeNowPlayingObjects</include>
+			<include>Furniture_HomeNowPlayingInfo</include>
+		</control>		
+
+	</include>
+
+	<!-- RSS -->
+
+	<include name="RSS">
+
+	<control type="group">
+
+		<Description>RSS Feed Bar</Description>
+	
+		<posy>663</posy>
+
+			<control type="image">
+				<posx>54</posx>
+				<posy>0</posy>
+				<width>1253</width>
+				<height>57</height>
+				<texture flipy="true">common/rssbar_mid.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+
+			<control type="rss" id="1">
+			    <posx>110</posx>
+			    <posy>35</posy>
+			    <width>1280</width>
+			    <font>Font_RSS</font>
+			    <urlset>1</urlset>
+			    <include>Colour_RSS</include>
+			</control>
+
+			<control type="image">
+				<posx>78</posx>
+				<posy>30</posy>
+				<width>133</width>
+				<height>28</height>
+				<texture flipy="true">common/rssbar_mid_fade.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+
+		</control>
+
+	</include>
+
+	<!-- Background -->
+
+	<include name="Background">
+
+		<control type="multiimage">
+		<width>1280</width>
+		<height>720</height>
+		<aspectratio>stretch</aspectratio>
+		<imagepath>../../../../../../../../Library/Desktop Pictures/Nature</imagepath>
+		<aspectratio>scale</aspectratio>
+		<timeperimage>8000</timeperimage>
+		<fadetime>1000</fadetime>
+		<randomize>true</randomize>
+		<loop>yes</loop>
+		<include>Animation_CommonFade</include>
+	</control>
+
+	</include>
+
 	<!-- Bookmarks -->
 
 	<include name="Objects_BookmarkMenu">
@@ -337,7 +525,7 @@
 			<font>Font_Time</font>
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
-			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time]  |  [/COLOR][COLOR FFcdcdcd]$INFO[Weather.Temperature][/COLOR]</label>
 		</control>
 </include>
 
