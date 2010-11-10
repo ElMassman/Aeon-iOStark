@@ -1,0 +1,370 @@
+<includes>
+  
+<include file="Defaults.xml" />
+<include file="CommonViews.xml" />
+<include file="Includes_Colours.xml" />
+
+	<!-- Bookmarks -->
+
+	<include name="Objects_BookmarkMenu">
+		<posx>3</posx>
+		<posy>159</posy>
+		<width>570</width>
+		<height>29</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<pulseonselect>false</pulseonselect>
+		<include>Colour_Grey</include>
+		<disabledcolor>3cFFFFFF</disabledcolor>
+		<textoffsetx>0</textoffsetx>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<font>Font_FSInfoData</font>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Objects_BookmarkButton">
+		<include>Colour_Grey</include>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<textoffsetx>0</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<width>205</width>
+		<height>29</height>
+		<font>Font_FSInfoData</font>
+	</include>
+
+	<!-- OSD -->
+
+	<include name="Objects_OSDButtonGroup10">
+		<width>790</width>
+		<posx>249</posx>
+	</include>
+	
+	<include name="Objects_OSDButtonGroup9">
+		<width>712</width>
+		<posx>284</posx>
+	</include>
+
+	<include name="Objects_OSDButton">
+		<width>88</width>
+		<height>88</height>
+		<texturefocus>osd/osd_button_focus.png</texturefocus>
+		<texturenofocus>osd/osd_button_nofocus.png</texturenofocus>
+	</include>
+	
+	<include name="Objects_OSDButtonTop">
+		<width>88</width>
+		<height>88</height>
+	</include>
+
+	<include name="Objects_OSDSeekForward">
+		<posx>470</posx>
+		<posy>0</posy>
+		<width>499</width>
+		<height>28</height>
+		<aligny>center</aligny>
+		<align>right</align>
+		<font>Font_OSDSeek</font>
+		<textcolor>FF363636</textcolor>
+		<include>Animation_CommonFade</include>		
+	</include>
+	
+	<include name="Objects_OSDSeekReverse">
+		<posx>29</posx>
+		<posy>0</posy>
+		<width>499</width>
+		<height>28</height>
+		<aligny>center</aligny>
+		<align>left</align>
+		<font>Font_OSDSeek</font>
+		<include>Colour_OffWhite</include>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<include name="Objects_OSDVisSettingsButton">
+		<posx>0</posx>
+		<posy>0</posy>		
+		<height>40</height>
+		<width>781</width>
+		<height>40</height>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<textoffsetx>30</textoffsetx>
+		<textoffsety>9</textoffsety>
+		<aligny>top</aligny>
+		<font>Font_OSDOptions</font>
+		<info>ListItem.Label</info>		
+	</include>
+	
+	<include name="Objects_OSDSettingsButton">
+		<posx>0</posx>
+		<height>40</height>
+		<textcolor>FF929191</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<textoffsetx>30</textoffsetx>
+		<textoffsety>9</textoffsety>
+		<aligny>top</aligny>
+		<font>Font_OSDOptions</font>
+		<texturefocus>osd/osd_settings_buttonf.png</texturefocus>
+		<texturenofocus>osd/osd_settings_buttonnf.png</texturenofocus>		
+	</include>
+	
+<!-- Keyboard -->
+
+	<include name="Objects_KeyOffVars">
+		<textcolor>77FFFFFF</textcolor>
+		<focusedcolor>77FFFFFF</focusedcolor>
+		<selectedcolor>77FFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<font>Font_KeyboardKeys</font>		
+	</include>
+	
+	<include name="Objects_KeyOnVars">
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<include>Animation_KeyboardFade</include>
+		<font>Font_KeyboardKeys</font>
+	</include>
+
+	<include name="Objects_KeyOffSymbolVars">
+		<textcolor>77FFFFFF</textcolor>
+		<focusedcolor>77FFFFFF</focusedcolor>
+		<selectedcolor>77FFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<font>Font_KeyboardShapes</font>		
+	</include>
+	
+	<include name="Objects_KeyOnSymbolVars">
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+		<align>center</align>
+		<aligny>top</aligny>
+		<textoffsety>21</textoffsety>
+		<include>Animation_KeyboardFade</include>
+		<font>Font_KeyboardShapes</font>
+	</include>
+	
+	<include name="Objects_DoubleKeyOff">
+		<posy>0</posy>		
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+	
+	<include name="Objects_DoubleKeyOffSymbol">
+		<posy>0</posy>		
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublenf.png</texturenofocus>
+		<include>Objects_KeyOffSymbolVars</include>
+	</include>	
+	
+	<include name="Objects_SingleKeyOff">
+		<posy>0</posy>			
+		<width>68</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_singlenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_singlenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+
+	<include name="Objects_TripleKeyOff">
+		<posy>0</posy>			
+		<width>152</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_triplenf.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_triplenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+	
+	<include name="Objects_SpaceBarOff">
+		<posy>0</posy>			
+		<width>278</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_spacef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_spacenf.png</texturenofocus>
+		<include>Objects_KeyOffVars</include>
+	</include>
+
+	<include name="Objects_DoubleKeyOn">
+		<posy>0</posy>			
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+	
+	<include name="Objects_DoubleKeyOnSymbol">
+		<posy>0</posy>			
+		<width>110</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_doublef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_doublef.png</texturenofocus>
+		<include>Objects_KeyOnSymbolVars</include>
+	</include>	
+	
+	<include name="Objects_SingleKeyOn">
+		<posy>0</posy>			
+		<width>68</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_singlef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_singlef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+
+	<include name="Objects_TripleKeyOn">
+		<posy>0</posy>			
+		<width>152</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_triplef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_triplef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>
+	</include>
+	
+	<include name="Objects_SpaceBarOn">
+		<posy>0</posy>			
+		<width>278</width>
+		<height>68</height>
+		<texturefocus>keyboard/keyboard_spacef.png</texturefocus>		
+		<texturenofocus>keyboard/keyboard_spacef.png</texturenofocus>
+		<include>Objects_KeyOnVars</include>		
+	</include>
+
+	<!-- Animations -->
+	
+	<include name="Animation_OSDFade">
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" delay="200" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>		
+	</include>
+
+	<include name="Animation_CommonFade">
+		<animation effect="fade" time="200">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="fade" time="500">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</include>
+
+	<include name="Animation_DialogPopup">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>		
+	</include>
+
+	<include name="Animation_KeyboardPopup">
+		<animation type="WindowOpen" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="130" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="130" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="130" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false" condition="Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="130" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+
+		<animation type="WindowOpen" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>
+		<animation type="Visible" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+			<effect type="fade" delay="200" start="0" end="100" time="300" />
+		</animation>
+		<animation type="Hidden" reversible="false" condition="!Skin.HasSetting(keyboardzoom)">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+			<effect type="fade" start="100" end="0" time="300" />
+		</animation>		
+	</include>
+
+	<!-- Common -->
+
+	<include name="Clock">
+
+	<control type="image">
+			<posx>1000</posx>
+			<posy>0</posy>
+			<width>451</width>
+			<height>27</height>
+			<texture flipy="true">common/timepanel_mid.png</texture>		
+			<aspectratio>stretch</aspectratio>	
+		</control>
+
+	<control type="label" id="70">
+			<posx>1270</posx>
+			<posy>-3</posy>
+			<width>400</width>
+			<font>Font_Time</font>
+			<align>right</align>
+			<include>Colour_WhiteAlpha80</include>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+		</control>
+</include>
+
+
+<include name="DialogBack">
+	<control type="image">
+		<width>520</width>
+		<height>424</height>
+		<texture>White.png</texture>
+    <aspectratio>stretch</aspectratio>
+	</control>
+</include>
+
+<include name="DialogID">
+	<posx>10</posx>
+	<posy>10</posy>
+	<font>Small</font>
+	<textcolor>Red</textcolor>
+	<align>left</align>
+</include>
+
+<include name="WindowID">
+	<posx>10</posx>
+	<posy>10</posy>
+	<font>Small</font>
+	<textcolor>Red</textcolor>
+	<align>left</align>
+</include>
+  
+</includes>
